@@ -6,10 +6,10 @@ function sumar()
 	var uno;
 	var dos;
 	var conclusion;
-	a=document.getElementById("numeroUno").value;
-	b=document.getElementById("numeroDos").value;
-	uno=parseInt(a);
-	dos=parseInt(b);
-	conclusion="la suma es"+ uno+dos ;
-	alert(conclusion);
+	uno=document.getElementById("numeroUno").value;
+	dos=document.getElementById("numeroDos").value;
+	uno=parseInt(uno);
+	dos=parseInt(dos);
+	conclusion=uno+dos;
+	alert("la suma es "+conclusion);
 }
