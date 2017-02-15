@@ -11,40 +11,44 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 function CalcularPrecio () 
 {
  	var lampara;
- 	var resultado;
  	lampara=document.getElementById("Cantidad").value;
  	lampara=parseInt(lampara);
+ 	var precio;
+ 	precio=parseInt(35)
+ 	var resultado;
+ 	resultado=(lampara*precio)
+ 	var resultado2;
+ 	var resultado3;
  	var marca;
  	marca=document.getElementById("Marca").value;
  	if(lampara>=6)
  	{
- 		
- 		resultado=(lampara*35)*0.5;
+ 		resultado2=(resultado*0.5);
  		alert("el precio es de "+resultado);
  	}
  	else if(lampara==5&&marca=="ArgentinaLuz")
  	{
- 		resultado=(lampara*35)*0.6;
+ 		resultado2=(resultado*0.6);
  		alert("el precio es de "+resultado);
  	}
- 	else if(lampara==5&&marca!="ArgentinaLuz")
+ 	else if(lampara==5)
  	{
- 		resultado=(lampara*35)*0.7;
+ 		resultado2=(resultado*0.7);
  		alert("el precio es de "+resultado);
  	}
- 	else if(lampara==4&&marca=="ArgentinaLuz"||"FelipeLamparas")
+ 	else if(lampara==4&&marca=="ArgentinaLuz"||marca=="FelipeLamparas")
  	{
- 		resultado=(lampara*35)*0.75;
+ 		resultado=(lampara*precio)*0.75;
  		alert("el precio es de "+resultado);
  	}
- 	else if(lampara==4&&marca!="ArgentinaLuz"||"FelipeLamparas")
+ 	else if(lampara==4)
  	{
- 		resultado=(lampara*35)*0.8;
+ 		resultado2=(resultado*0.8);
  		alert("el precio es de "+resultado);
  	}
  	else if(lampara==3&&marca=="ArgentinaLuz")
  	{
-		 resultado=(lampara*35)*0.85;
+		 resultado=(lampara*precio)*0.85;
 		 alert("el precioes de "+resultado);	
  	}
  	else if(lampara==3&&marca=="FelipeLamparas")
@@ -52,14 +56,14 @@ function CalcularPrecio ()
  		resultado=(lampara*35)*0.9;
  		alert("el precio es de "+resultado)
  	}
- 	else if(lampara==3&&marca!="ArgentinaLuz"||"FelipeLamparas")
+ 	else if(lampara==3)
  	{
- 		resultado=(lampara*35)*0.95;
+ 		resultado2=(resultado*0.95);
  		alert("el precio es de "+resultado)
  	}
- 	else if(resultado>120)
+ 	if(resultado2>120)
  	{
- 		resultado=(resultado/0.1)
- 		alert("el precio es de "+resultado)
+ 		resultado3=(resultado2*0.1)
+ 		alert("el precio bruto es de "+resultado3)
  	}	
 }
