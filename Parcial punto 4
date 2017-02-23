@@ -1,0 +1,24 @@
+function Mostrar()
+var N1;N2;
+N1=prompt(Primer Numero)
+N1=parseInt(N1)
+N2=prompt(Segundo Numero)
+N2=parseInt(N2)
+if(N1==N2)
+{
+	var producto;
+	producto=N1*N2
+}
+elseif(N1>N2)
+{
+	var resta;
+	resta=N1-N2;
+}
+elseif(N1<N2)
+{
+	var suma;
+	suma=N1+N2
+}
+document.write(producto);
+document.write(resta);
+document.write(suma);

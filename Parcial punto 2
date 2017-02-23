@@ -1,0 +1,9 @@
+function Mostrar()
+{	
+	var importe;
+	importe=prompt("cual es su importe")
+	importe=parseInt(importe)
+	var importe+iva;
+	importe+iva=importe*0.79
+	alert("el importe + el iva de 21% es de "importe+iva)
+}

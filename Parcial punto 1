@@ -1,0 +1,13 @@
+function Mostrar()
+{
+	var base;
+	base=document.getElementById("base").value
+	base=parseInt(base)
+	var altura=4;
+	altura=parseInt(altura)
+	var perimetro;
+	perimetro=base*altura
+	alert("el perimetro del cuadrado es de "+perimetro)
+
+}
+

@@ -1,0 +1,15 @@
+function Mostrar()
+var dia;
+dia=document.getElementById("dia").value
+swicht(dia)
+{
+	case("sabado")
+	case("domingo"):
+		{
+		alert("es fin de semana")
+		}break;
+	default:
+		{
+		alert("a trabajar!!!")
+		}
+}

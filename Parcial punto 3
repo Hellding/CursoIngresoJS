@@ -1,0 +1,16 @@
+function Mostrar()
+{
+	var largo;
+	var ancho;
+	largo=document.getElementById("largo").value;
+	ancho=document.getElementById("ancho").value;
+	largo=parseInt(largo);
+	ancho=parseInt(ancho);
+	var perimetro;
+	perimetro=2*largo+2*ancho
+	perimetro=parseInt(perimetro)
+	var cable;
+	cable=perimetro*3
+	cable=parseInt(cable)
+	alert("los metros de cable nesecarios son "+cable)
+}

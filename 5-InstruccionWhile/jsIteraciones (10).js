@@ -1,51 +1,32 @@
 function Mostrar()
 {
-	var numero;
-	var contador=0;
-	//declarar contadores y variables 
-	var positivos;
-	var negativos;
-	var cantpos=0;
-	var cantneg=0;
-	var cantdeo=0;
-	var cantdenpares=0;
-	var promdepos;
-	var promdeneg;
-	var respuesta="si";
-	respuesta=prompt("comenzar el programa?")
-	while(respuesta!="no")
+var num;
+var acumpos=0;acumneg=0
+var cantp=0;cantn=0;cantc=0;cantpar=0
+while(confirm(""))
+{
+num=prompt("");
+num=parseInt(num);
+	if(num>0)
 	{
-		numero=prompt("");
-		numero=parseInt(numero);
-		if(numero>0)
-		{
-			cantpos++;
-			positivos+=numero;
-			promdepos/=numero;
-		}
-		if(numero<0)
-		{
-			cantneg++;
-			negativos+=numero;
-			promdeneg/=numero;
-		}
-		if(numero=0)
-		{
-			cantdeo++;
-		}
-		if(numero%2==0)
-		{
-			cantdenpares++;
-		}
-	respuesta=confirm("quieres continuar?")
+	acumpos=num;
+	cantp++;
 	}
-	alert("la suma de los negativos es "+negativos)
-	alert("la suma de los positivos es "+positivos)
-	alert("la cantidad de positivos es de "+cantpos)
-	alert("la cantidad de negativos es de "+cantneg)
-	alert("la cantidad de 0 es de "+cantdeo)
-	alert("la cantidad de numeros pares es de "+cantdenpares)
-	alert("el promedio de numeros positivos es de "+promdepos)
-	alert("el promedio de numeros negativos es de "+promdeneg)
-	alert("la diferancia entre posistivos y negativos es de "+posistivos-negativos)
+	else if(num<0)
+	{
+	acumneg=num;
+	cantn++;
+	}
+	else if(num=0)
+	{
+	cantc++;
+	}
+	if(num%2==0)
+	{
+	cantpar++;
+	}
+}
+document.write(acumpos/cantp);
+document.write(acumneg/cantn);
+document.write(acumpos-acumneg);
 }//FIN DE LA FUNCIÓN
