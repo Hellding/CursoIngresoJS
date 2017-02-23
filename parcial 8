@@ -1,0 +1,49 @@
+function Mostrar()
+{
+	var edad;
+	var sexo;
+	sexo=prompt("Cual es su sexo")
+	var contpar=0;
+	var primera=true;
+	var hombreviejo;
+	var mujerjoven;
+	var acumedadm=0;
+	var contm=0;
+	var masviejo\a;
+	while(confirm())
+	{
+		while(edad>18||edad<65)
+		{
+			edad=prompt("Cual es su edad");
+			edad=parseInt(edad)
+			if(2%==0)
+			{
+				contpar++;
+			}
+		}
+		while(sexo!="f"&&sexo!="m")
+		{
+			sexo=prompt("Cual es su sexo");
+			if(sexo=="m")
+			{
+				acumedadm+=edad
+				contm++;
+			}
+			if(sexo=="f")
+			{
+				if(edad<mujerjoven)
+				{
+				mujerjoven=edad
+				}
+			}
+			else
+			{
+				if(edad>hombreviejo)
+					{
+						hombreviejo=edad
+					}
+			}
+			if(edad>masviejo\a)
+		}
+	}
+}
